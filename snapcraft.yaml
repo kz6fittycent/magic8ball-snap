@@ -1,6 +1,6 @@
 
 name: magic8ball # check to see if it's available
-version: '1.0.3+git' # this is freakin' awesome
+version: '1.0.4+git' # this is freakin' awesome
 summary: Ask the Magic 8-ball. # 79 char long summary
 description: |
   Learn your fortune and get advice from the Magic 8-ball! 
