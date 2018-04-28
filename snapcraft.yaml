@@ -1,6 +1,6 @@
 
 name: magic8ball # check to see if it's available
-version: '2.0.1+git' # this is freakin' awesome
+version: '2.0.2+git' # this is freakin' awesome
 summary: Ask the Magic 8-ball. # 79 char long summary
 description: |
   Learn your fortune and get advice from the Magic 8-ball! 
@@ -17,7 +17,8 @@ parts:
   my-part:
     source: https://github.com/kz6fittycent/magic8ball
     source-type: git
-    plugin: python3
+    plugin: python
+    python-version: python3
     
     build-packages:
       - python3
