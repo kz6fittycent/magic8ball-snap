@@ -1,25 +1,32 @@
 
 name: magic8ball # check to see if it's available
-version: git
+adopt-info: magic8ball
 summary: Ask the Magic 8-ball. # 79 char long summary
 description: |
   Learn your fortune and get advice from the Magic 8-ball! 
 grade: stable # must be 'stable' to release into candidate/stable channels
 confinement: strict # use 'strict' once you have the right plugs
 
+license: MIT
+
+base: core18
+grade: stable
+confinement: strict
+
 apps:
   magic8ball:
     command: magic8ball
-    plugs:
-      - home
      
 parts: 
-  my-part:
+  magic8ball:
     source: https://github.com/kz6fittycent/magic8ball
     source-type: git
     plugin: python
     python-version: python3
-    
+    override-pull: |
+      snapcraftctl pull
+      snapcraftctl set-version "$(git describe --tags | sed 's/^v//')"
+      
     build-packages:
       - python3
       
