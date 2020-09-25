@@ -1,10 +1,10 @@
-name: magic8ball # check to see if it's available
+name: magic8ball 
 adopt-info: magic8ball
-summary: Ask the Magic 8-ball. # 79 char long summary
+summary: Ask the Magic 8-ball. 
 description: |
   Learn your fortune and get advice from the Magic 8-ball! 
-grade: stable # must be 'stable' to release into candidate/stable channels
-confinement: strict # use 'strict' once you have the right plugs
+grade: stable 
+confinement: strict 
 
 license: MIT
 
