@@ -3,25 +3,21 @@ adopt-info: magic8ball
 summary: Ask the Magic 8-ball. 
 description: |
   Learn your fortune and get advice from the Magic 8-ball! 
+
 grade: stable 
 confinement: strict 
-
 license: MIT
-
-base: core18
-grade: stable
-confinement: strict
+base: core22
 
 apps:
   magic8ball:
-    command: magic8ball
+    command: bin/magic8ball
      
 parts: 
   magic8ball:
     source: https://github.com/kz6fittycent/magic8ball
     source-type: git
     plugin: python
-    python-version: python3
     override-pull: |
       snapcraftctl pull
       snapcraftctl set-version "$(git describe --tags | sed 's/^v//' | cut -d "-" -f1)"
