@@ -15,7 +15,7 @@ apps:
      
 parts: 
   magic8ball:
-    source: https://github.com/kz6fittycent/magic8ball
+    source: https://github.com/kz6fittycent/magic8ball-snap
     source-type: git
     plugin: python
     override-pull: |

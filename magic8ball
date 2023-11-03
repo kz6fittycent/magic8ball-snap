@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+
+import libmagic8ball
+
+libmagic8ball.main()
